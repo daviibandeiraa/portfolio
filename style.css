@@ -10,9 +10,9 @@
 body {
   width: 100%;
   height: 100vh;
-  background: url(CREATIVE.png);
+  background: cornsilk;
   background-size: cover;
-  
+
 }
 
 header {
@@ -58,8 +58,337 @@ header .menu ul li a:hover {
 
 /*==== Main Home === */
 
-#home .container {
+#Home .container {
   width: 100%;
   height: 100vh;
+  background: url(image/CREATIVE.png);
   background-size: cover;
+}
+
+#Home .container .icons {
+  width: 10%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  position: fixed;
+  z-index: 999;
+}
+
+#Home .container .icons ion-icon {
+  padding: 30px 0;
+  font-size: 1.9rem;
+  color: #fff;
+  transition: 0.5 ease;
+}
+
+#Home .container .icons ion-icon:hover {
+  color: #156fc6;
+}
+
+#Home .container .title {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+#Home .container .title h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8rem;
+  letter-spacing: 5px;
+  margin-right: 150px;
+}
+
+#Home .container .title h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+  font-size: 3rem;
+  margin-left: 30px;
+}
+
+#Home .container .title h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 20px;
+  margin-top: 30px;
+  margin-left: 35px;
+
+}
+
+/* ==== about ==== */
+
+#about .container {
+  width: 100%;
+  height: 100vh;
+  background: url(image/CREATIVE_2.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .container .title {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+#about .container .title h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: left;
+}
+
+#about .container .title h3 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+#about .container .title p {
+  color: #fff;
+  width: 500px;
+  margin-top: 10px;
+
+}
+
+#about .container .box-title {
+  width: 420px;
+  height: 37vh;
+  margin-top: 20px;
+  padding: 0 10px;
+  box-shadow: 0 0 10px 0 rgba(21, 111, 195, 0.5);
+  border-radius: 20px;
+}
+
+#about .container .box-title span {
+  color: #fff;
+
+}
+
+#about .container .box-title .b1 {
+  width: 400px;
+  height: 8px;
+  background: #fff;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+#about .container .box-title .b2 {
+  width: 280px;
+  height: 8px;
+  background: #156fc6;
+  border-radius: 5px;
+}
+
+#about .container .box-title .b3 {
+  width: 280px;
+  height: 8px;
+  background: #156fc6;
+  border-radius: 5px;
+}
+
+#about .container .box-title .b4 {
+  width: 200px;
+  height: 8px;
+  background: #156fc6;
+  border-radius: 5px;
+}
+
+#about .container .box-title .b5 {
+  width: 160px;
+  height: 8px;
+  background: #156fc6;
+  border-radius: 5px;
+}
+
+#about .container .box-title .b6 {
+  width: 120px;
+  height: 8px;
+  background: #156fc6;
+  border-radius: 5px;
+}
+
+/* ====== portfolio ======*/
+#port .container {
+  width: 100%;
+  height: 100vh;
+  background: url(image/CREATIVE_3.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#port .container input[type=radio] {
+  display: none;
+}
+
+#port .container .card {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  left: 0;
+  right: 0;
+  margin: 150px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(21, 111, 195, 0.5);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+
+#port .container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#port .container .card h1 {
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  font-size: 6rem;
+  margin-top: 60px;
+}
+
+#port .container .card p {
+  position: absolute;
+  z-index: 9;
+  width: 400px;
+  color: #fff;
+  margin-top: 200px;
+  text-align: justify;
+}
+
+#port .container .card button {
+  position: absolute;
+  z-index: 9;
+  margin-top: 400px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: rgba(21, 111, 195, 0.5);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#port .container .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+/*===== contact =====*/
+
+#contact .container{
+  width: 100%;
+  height: 100vh;
+  background: url(image/CREATIVE_3.png);
+  background-size: cover;
+}
+#contact .container .content-contact{
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 200px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#contact .content-contact .contact-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+}
+#contact .content-contact .contact-left h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#contact .content-contact .linha{
+  width: 350px;
+  height: 3px;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contact .content-contact .contact-left ion-icon{
+  font-size: 2rem;
+  padding: 20px 0;
+}
+#contact .content-contact .contact-left span{
+  font-size: 1.2rem;
+  padding: 5px;
+}
+#contact .content-contact .contact-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+#contact .content-contact .contact-left h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#contact .content-contact .contact-right input[type=email],
+#contact .content-contact .contact-right input[type=text]{
+border-radius: 20px;
+border: none;
+padding: 15px 20px;
+margin-bottom: 20px;
+font-size: 1.2rem;
+font-weight: 600;
+outline: none;
+}
+#contact .content-contact .contact-right textarea{
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+  padding-bottom: 15px 20px;
+
 }
