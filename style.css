@@ -430,196 +430,148 @@ footer a {
 
 /*===Responsive===*/
 
-@media screen and (max-width: 1280px) {
-  #Home .container .icons ion-icon {
-    font-size: 1.4rem;
+@media screen and (max-width: 1280px){
+  #home .container .icons ion-icon{
+      font-size: 1.5rem;
   }
-
-  #port .container .card h1 {
-    font-size: 3rem;
+  #port .container .card h1{
+      font-size: 5rem;
   }
-
-  #port .container .card p {
-    width: 280px;
-    font-size: 0.8rem;
+  #port .container .card p{
+      width: 280px;
+      font-size: 0.8rem;
   }
 }
-
-@media screen and (max-width: 960px) {
-  body {
-    background: url(image/CREATIVE_3.png);
+@media screen and (max-width: 960px){
+  body{
+      background: url(image/CREATIVE_3.png);
   }
-
-  header {
-    background: none;
+  header{
+      background: none;
   }
-
-  header .logo {
-    width: 600px;
-
+  header .logo{
+      width: 600px;
   }
-
-  header .menu {
-    display: none;
+  header .menu{
+      display: none;
   }
-
-  header .btn-mobile {
-    display: block;
+  header .btn-mobile{
+      display: block;
   }
-
   header .btn-mobile ion-icon {
-    color: #fff;
-    font-size: 1.5rem;
+      color: #fff;
+      font-size: 1.5rem;
   }
-
-  header .menu-mobile {
-    display: none;
-    width: 50%;
-    height: 20vh;
-    box-shadow: 0 0 15px 0 rgba(21, 111, 195, 0.5);
-    position: fixed;
-    top: 20px;
-    border-radius: 10px;
-    background: #156fc6;
-
+  header .menu-mobile{
+      display: none;
+      width: 50%;
+      height: 20vh;
+      box-shadow: 0 0 15px 0 rgba(21,111,195,0.5);
+      position: fixed;
+      top: 20px;
+      border-radius: 10px;
+      background: #156fc3;
   }
-
-  header .menu-mobile ul {
-    text-align: center;
+  header .menu-mobile ul{
+      text-align: center;
   }
-
-  header .menu-mobile ul li {
-    list-style: none;
-    padding: 12px 0;
-
+  header .menu-mobile ul li{
+      list-style: none;
+      padding: 12px 0;
   }
-
-  header .menu-mobile ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-
+  header .menu-mobile ul li a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
   }
-
-  #Home .container .icons {
-    padding: 0 20px;
-
+  #home .container .icons{
+      padding: 0 20px;
   }
-
-  #Home .container .title {
-    align-items: center;
+  #home .container .title{
+      align-items: center;
   }
-
-  #Home .container .title h1 {
-    font-size: 5rem;
-    text-shadow: black 0.1em 0.1em 0.3em
+  #home .container .title h1{
+      font-size: 5rem;
   }
-
-  #Home .container h2 {
-    font-size: 1.2rem;
-    text-shadow: black 0.1em 0.1em 0.4em
+  #home .container .title h2{
+      font-size: 1.2rem;
   }
-
-  #Home .container h3 {
-    font-size: 0.9rem;
-    text-shadow: black 0.1em 0.1em 0.5em
+  #home .container .title h3{
+      font-size: 0.9rem;
   }
-
-  #about .container .title {
-    align-items: center
+  #about .container .title{
+      align-items: center;
   }
-
-  #about .contianer .box-title {
-    width: 100%;
-    height: 40vh;
+  #about .container .box-title{
+      width: 100%;
+      height: 40vh;
   }
-
-  #about .container .box-title .b1 {
-    width: 100%;
+  #about .container .box-title .b1{
+      width: 100%;
   }
-
-  #about .container .box-title .b2 {
-    width: 70%;
+  #about .container .box-title .b2{
+      width: 90%;
   }
-
-  #about .container .box-title .b3 {
-    width: 70%;
+  #about .container .box-title .b3{
+      width: 80%;
   }
-
-  #about .container .box-title .b4 {
-    width: 50%;
+  #about .container .box-title .b4{
+      width: 87%;
   }
-
-  #about .container .box-title .b5 {
-    width: 40%;
+  #about .container .box-title .b5{
+      width: 76%;
   }
-
-  #about .container .box-title .b6 {
-    width: 30%;
+  #contact .container .content-contact{
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
   }
-
-  #contact .container .content-contact {
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  #contact .content-contact .contact-left h1{
+      font-size: 1.5rem;
   }
-
-  #contact .content-contact .content-left h1 {
-    font-size: 1.5rem;
+  #contact .content-contact .contact-left ion-icon{
+      font-size: 1.5rem;
+      padding: 5px 0;
   }
-
-  #contact .content-contact .content-left ion-icon {
-    font-size: 1rem;
-    padding: 5px 0;
+  #contact .content-contact .contact-left span{
+      font-size: 1rem;
+      padding: 5px 0;
   }
-
-  #contact .content-contact .content-left span {
-    font-size: 1rem;
-    padding: 5px 0;
+  #contact .content-contact .contact-right h1{
+      font-size: 1.5rem;
+      margin-top: 80px;
   }
-
-  #contact .content-contact .content-right {
-    font-size: 1.5rem;
+  #contact .content-contact .contact-right input[type=email],
+  #contact .content-contact .contact-right input[type=text]{
+      padding: 10px 15px;
+      font-size: 1rem;
   }
-
-  #contact .content-contact .content-right input[type=email],
-  #contact .content-contact .content-right input[type=text] {
-    padding: 10px 15px;
-    font-size: 1rem;
-  }
-
-  #contact .content-contact .content-right textarea {
-    padding: 10px 15px;
-    font-size: 1rem;
+  #contact .content-contact .contact-right textarea{
+      padding: 10px 15px;
+      font-size: 1rem;
   }
 }
-
-@media screen and (max-width: 750px) {
-  header {
-    padding: 10px;
+@media screen and (max-width: 750px){
+  header{
+      padding: 10px;
   }
-
-  #home .container .title h2 {
-    letter-spacing: 30px;
+  #home .container .title h2{
+      letter-spacing: 30px;
   }
-
-  #home .container .title h3 {
-    letter-spacing: 10px;
+  #home .container .title h3{
+      letter-spacing: 10px;
   }
-
-  #about .container .title {
-    padding: 10px 60px;
+  #about .container .title{
+      padding: 10px 60px;
   }
-
-  #about .container .title p {
-    width: 100%;
-    margin-top: 30px;
+  #about .container .title p{
+      width: 100%;
+      margin-top: 30px;
   }
-
-  #port .container .card {
-    width: 60%;
-    height: 60%;
+  #port .container .card{
+      width: 60%;
+      height: 60%;
   }
 }
