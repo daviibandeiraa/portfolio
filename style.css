@@ -10,9 +10,8 @@
 body {
   width: 100%;
   height: 100vh;
-  background: cornsilk;
+  background: url(image/CREATIVE.png);
   background-size: cover;
-
 }
 
 header {
@@ -61,8 +60,7 @@ header .menu ul li a:hover {
 #Home .container {
   width: 100%;
   height: 100vh;
-  background: url(image/CREATIVE.png);
-  background-size: cover;
+
 }
 
 #Home .container .icons {
@@ -258,23 +256,26 @@ header .menu ul li a:hover {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  filter: brightness(60%);
 }
 
 #port .container .card h1 {
   position: absolute;
   z-index: 9;
   color: #fff;
-  font-size: 6rem;
+  font-size: 5rem;
   margin-top: 60px;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #port .container .card p {
   position: absolute;
   z-index: 9;
-  width: 400px;
+  width: 500px;
   color: #fff;
   margin-top: 200px;
   text-align: justify;
+  text-shadow: black 0.1em 0.1em 0.1em
 }
 
 #port .container .card button {
@@ -290,42 +291,51 @@ header .menu ul li a:hover {
   cursor: pointer;
 }
 
+#port .container .card button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 #port .container .cards {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2 {
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2 {
   transform: translateX(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1 {
+
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1 {
   transform: translateX(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3 {
+
+#item-1:checked~.cards #song-1,
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3 {
   transform: translateX(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
+
 /*===== contact =====*/
 
-#contact .container{
+#contact .container {
   width: 100%;
   height: 100vh;
   background: url(image/CREATIVE_3.png);
   background-size: cover;
 }
-#contact .container .content-contact{
+
+#contact .container .content-contact {
   width: 80%;
   height: 60vh;
   margin: 0 auto;
@@ -334,53 +344,62 @@ header .menu ul li a:hover {
   align-items: flex-start;
   justify-content: space-between;
 }
-#contact .content-contact .contact-left{
+
+#contact .content-contact .contact-left {
   width: 50%;
   display: flex;
   flex-direction: column;
   color: #fff;
 
 }
-#contact .content-contact .contact-left h1{
+
+#contact .content-contact .contact-left h1 {
   font-size: 2rem;
   text-transform: uppercase;
 }
-#contact .content-contact .linha{
+
+#contact .content-contact .linha {
   width: 350px;
   height: 3px;
   background: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#contact .content-contact .contact-left ion-icon{
+
+#contact .content-contact .contact-left ion-icon {
   font-size: 2rem;
   padding: 20px 0;
 }
-#contact .content-contact .contact-left span{
+
+#contact .content-contact .contact-left span {
   font-size: 1.2rem;
   padding: 5px;
 }
-#contact .content-contact .contact-right{
+
+#contact .content-contact .contact-right {
   width: 50%;
   display: flex;
   flex-direction: column;
   color: #fff;
 }
-#contact .content-contact .contact-left h1{
+
+#contact .content-contact .contact-left h1 {
   font-size: 2rem;
   text-transform: uppercase;
 }
+
 #contact .content-contact .contact-right input[type=email],
-#contact .content-contact .contact-right input[type=text]{
-border-radius: 20px;
-border: none;
-padding: 15px 20px;
-margin-bottom: 20px;
-font-size: 1.2rem;
-font-weight: 600;
-outline: none;
+#contact .content-contact .contact-right input[type=text] {
+  border-radius: 20px;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
 }
-#contact .content-contact .contact-right textarea{
+
+#contact .content-contact .contact-right textarea {
   width: 100%;
   height: 120px;
   border-radius: 20px;
@@ -390,5 +409,217 @@ outline: none;
   font-weight: 600;
   outline: none;
   padding-bottom: 15px 20px;
+}
 
+/*===== footer =====*/
+footer {
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -80px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2e8b57;
+}
+
+/*===Responsive===*/
+
+@media screen and (max-width: 1280px) {
+  #Home .container .icons ion-icon {
+    font-size: 1.4rem;
+  }
+
+  #port .container .card h1 {
+    font-size: 3rem;
+  }
+
+  #port .container .card p {
+    width: 280px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    background: url(image/CREATIVE_3.png);
+  }
+
+  header {
+    background: none;
+  }
+
+  header .logo {
+    width: 600px;
+
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header .btn-mobile {
+    display: block;
+  }
+
+  header .btn-mobile ion-icon {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  header .menu-mobile {
+    display: none;
+    width: 50%;
+    height: 20vh;
+    box-shadow: 0 0 15px 0 rgba(21, 111, 195, 0.5);
+    position: fixed;
+    top: 20px;
+    border-radius: 10px;
+    background: #156fc6;
+
+  }
+
+  header .menu-mobile ul {
+    text-align: center;
+  }
+
+  header .menu-mobile ul li {
+    list-style: none;
+    padding: 12px 0;
+
+  }
+
+  header .menu-mobile ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+  }
+
+  #Home .container .icons {
+    padding: 0 20px;
+
+  }
+
+  #Home .container .title {
+    align-items: center;
+  }
+
+  #Home .container .title h1 {
+    font-size: 5rem;
+    text-shadow: black 0.1em 0.1em 0.3em
+  }
+
+  #Home .container h2 {
+    font-size: 1.2rem;
+    text-shadow: black 0.1em 0.1em 0.4em
+  }
+
+  #Home .container h3 {
+    font-size: 0.9rem;
+    text-shadow: black 0.1em 0.1em 0.5em
+  }
+
+  #about .container .title {
+    align-items: center
+  }
+
+  #about .contianer .box-title {
+    width: 100%;
+    height: 40vh;
+  }
+
+  #about .container .box-title .b1 {
+    width: 100%;
+  }
+
+  #about .container .box-title .b2 {
+    width: 70%;
+  }
+
+  #about .container .box-title .b3 {
+    width: 70%;
+  }
+
+  #about .container .box-title .b4 {
+    width: 50%;
+  }
+
+  #about .container .box-title .b5 {
+    width: 40%;
+  }
+
+  #about .container .box-title .b6 {
+    width: 30%;
+  }
+
+  #contact .container .content-contact {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact .content-contact .content-left h1 {
+    font-size: 1.5rem;
+  }
+
+  #contact .content-contact .content-left ion-icon {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  #contact .content-contact .content-left span {
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  #contact .content-contact .content-right {
+    font-size: 1.5rem;
+  }
+
+  #contact .content-contact .content-right input[type=email],
+  #contact .content-contact .content-right input[type=text] {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  #contact .content-contact .content-right textarea {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    padding: 10px;
+  }
+
+  #home .container .title h2 {
+    letter-spacing: 30px;
+  }
+
+  #home .container .title h3 {
+    letter-spacing: 10px;
+  }
+
+  #about .container .title {
+    padding: 10px 60px;
+  }
+
+  #about .container .title p {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #port .container .card {
+    width: 60%;
+    height: 60%;
+  }
 }

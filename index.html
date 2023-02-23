@@ -16,21 +16,33 @@
     </div>
     <div class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Porfólio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#port">Porfólio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+    <div class="menu-mobile">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#port">Porfólio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="btn-mobile">
+      <ion-icon name="grid-outline"></ion-icon>
+    </div>
   </header>
+  
 
   <main id="Home">
     <div class="container">
       <div class="icons">
-        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href=""><ion-icon name="logo-github"></ion-icon></a>
+        <a target="_blank" href="https://www.instagram.com/bandeiraa_04/"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a target="_blank" href="https://twitter.com/daviibandeiraa"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a target="_blank" href="https://www.linkedin.com/in/davi-bandeira-716417238/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a target="_blank" href="https://github.com/daviibandeiraa"><ion-icon name="logo-github"></ion-icon></a>
 
       </div>
       <div class="title">
@@ -46,9 +58,8 @@
     <div class="container">
       <div class="title">
         <h1>I am a front end developer</h1>
-        <h3>Olá, Meu nome é Davi!</h3>
-        <p>Curso programação na escola Senac e estou a procura de novas experiências para aprimorar conhecimentos e
-          habilidades, fiz esse portfólio para apresentar alguns dos meus projetos!</p>
+        <h3>Hello, my name is Davi!</h3>
+        <p>Programming course at Senac school and I'm looking for new experiences to improve knowledge and skills, I made this portfolio to present some of my projects!</p>
         <div class="box-title">
           <p>70%</p>
           <div class="b1">
@@ -91,17 +102,17 @@
       <input type="radio" name="slider" id="item-3">
       <div class="cards">
         <label class="card" for="item-1" id="song-1">
-          <img src="image/01.png" alt="">
-          <h1>Web</h1>
-          <p></p>
-          <button>Hire me</button>
+          <img src="image/projeto02.png" alt="">
+          <h1>Bande Bot</h1>
+          <p>This is a Landing Page I developed from a fictitious bot for Discord</p>
+          <button> <a href="https://daviibandeiraa.github.io/creating-lading-page/">Hire Me</a></button>
         </label>
 
         <label class="card" for="item-2" id="song-2">
-          <img src="image/02.png" alt="">
-          <h1>Design</h1>
-          <p></p>
-          <button>Hire me</button>
+          <img src="image/projeto01.png" alt="">
+          <h1>Personal website</h1>
+          <p>This is a project made to test HTML and CSS skills which shows a simple mean calculator in JavaScript</p>
+          <button><a href="https://daviibandeiraa.github.io/site-pessoal-2/">Hire me</a></button>
         </label>
 
         <label class="card" for="item-3" id="song-3">
@@ -124,7 +135,7 @@
           <ion-icon name="call-outline"></ion-icon>
           <span>+55 19 99290-0560</span>
           <ion-icon name="location-outline"></ion-icon>
-          <span>Americana,SP - Brazil</span>
+          <span>Americana, SP - Brazil</span>
 
         </div>
         <div class="contact-right">
@@ -138,7 +149,20 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <span>Copyright 2023 <a href="https://github.com/daviibandeiraa">DAVI BANDEIRA</a> All Rights Reserved </span>
+  </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
-  <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+  <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".btn-mobile").click(function(){
+        $(".menu-mobile").slideToggle("slow")
+      })
+
+    })
+  </script>
 </body>
 </html>
