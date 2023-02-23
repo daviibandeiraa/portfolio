@@ -185,14 +185,14 @@ header .menu ul li a:hover {
 }
 
 #about .container .box-title .b2 {
-  width: 280px;
+  width: 260px;
   height: 8px;
   background: #156fc6;
   border-radius: 5px;
 }
 
 #about .container .box-title .b3 {
-  width: 280px;
+  width: 260px;
   height: 8px;
   background: #156fc6;
   border-radius: 5px;
@@ -510,16 +510,19 @@ footer a {
       width: 100%;
   }
   #about .container .box-title .b2{
-      width: 90%;
+      width: 65%;
   }
   #about .container .box-title .b3{
-      width: 80%;
+      width: 65%;
   }
   #about .container .box-title .b4{
-      width: 87%;
+      width: 50%;
   }
   #about .container .box-title .b5{
-      width: 76%;
+      width: 40%;
+  }
+  #about .container .box-title .b5{
+    width: 30%;
   }
   #contact .container .content-contact{
       width: 100%;
