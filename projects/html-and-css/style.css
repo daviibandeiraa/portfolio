@@ -115,16 +115,32 @@ header .menu ul li a:hover {
   margin-top: 350px;
   padding: 10px 20px;
   border-radius: 20px;
-  border: none;
+  border: 2px solid #00fa6d;
   color: #fff;
-  background-color: #00fa6d;
+  background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .container .card button a {
   text-decoration: none;
+  color: #00fa6d;
+}
+
+.container .card button:hover{
+  position: absolute;
+  z-index: 9;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
   color: #fff;
+  background-color: #00fa6d;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container .card button a:hover{
+  text-decoration: none;
+  color: white;
 }
 
 .container .cards {
