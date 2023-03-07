@@ -274,18 +274,19 @@ header .menu ul li a:hover {
 #port .container .card p {
   position: absolute;
   z-index: 9;
-  width: 500px;
+  width: 600px;
   color: #fff;
   margin-top: 200px;
   text-align: justify;
   text-shadow: black 0.1em 0.1em 0.1em;
   text-align: center;
+  font-size: 22px;
 }
 
 #port .container .card button {
   position: absolute;
   z-index: 9;
-  margin-top: 400px;
+  margin-top: 600px;
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
