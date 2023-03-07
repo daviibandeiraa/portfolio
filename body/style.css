@@ -10,7 +10,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background: url(image/CREATIVE.png);
+  background: url(image/homepage.png);
   background-size: cover;
 }
 
@@ -52,7 +52,7 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-  color: #156fc6;
+  color: #00ff6e;
 }
 
 /*==== Main Home === */
@@ -62,6 +62,7 @@ header .menu ul li a:hover {
   height: 100vh;
 
 }
+
 
 #Home .container .icons {
   width: 10%;
@@ -82,7 +83,7 @@ header .menu ul li a:hover {
 }
 
 #Home .container .icons ion-icon:hover {
-  color: #156fc6;
+  color: #00fa6d;
 }
 
 #Home .container .title {
@@ -114,7 +115,7 @@ header .menu ul li a:hover {
 }
 
 #Home .container .title h3 {
-  color: #fff;
+  color: #00fa6d;
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 20px;
@@ -129,7 +130,7 @@ header .menu ul li a:hover {
 #about .container {
   width: 100%;
   height: 100vh;
-  background: url(image/CREATIVE_2.png);
+  background: url(image/about.png);
   background-size: cover;
   display: flex;
   justify-content: space-between;
@@ -154,7 +155,7 @@ header .menu ul li a:hover {
 }
 
 #about .container .title h3 {
-  color: #fff;
+  color: #00fa6d;
   margin-top: 20px;
 }
 
@@ -190,35 +191,35 @@ header .menu ul li a:hover {
 #about .container .box-title .b2 {
   width: 260px;
   height: 8px;
-  background: #156fc6;
+  background: #00fa6d;
   border-radius: 5px;
 }
 
 #about .container .box-title .b3 {
   width: 260px;
   height: 8px;
-  background: #156fc6;
+  background: #00fa6d;
   border-radius: 5px;
 }
 
 #about .container .box-title .b4 {
   width: 200px;
   height: 8px;
-  background: #156fc6;
+  background :#00fa6d;
   border-radius: 5px;
 }
 
 #about .container .box-title .b5 {
   width: 160px;
   height: 8px;
-  background: #156fc6;
+  background: #00fa6d;
   border-radius: 5px;
 }
 
 #about .container .box-title .b6 {
   width: 120px;
   height: 8px;
-  background: #156fc6;
+  background: #00fa6d;
   border-radius: 5px;
 }
 
@@ -226,7 +227,7 @@ header .menu ul li a:hover {
 #port .container {
   width: 100%;
   height: 100vh;
-  background: url(image/CREATIVE_3.png);
+  background: url(image/CREATIVE_3\ teste2.png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -248,7 +249,7 @@ header .menu ul li a:hover {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  box-shadow: 0 0 10px 0 rgba(21, 111, 195, 0.5);
+  box-shadow: 0 0 10px 0 #00fa6d;
   transition: 0.4s ease;
   cursor: pointer;
 }
@@ -266,7 +267,7 @@ header .menu ul li a:hover {
   position: absolute;
   z-index: 9;
   color: #fff;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 60px;
   text-shadow: black 0.1em 0.1em 0.2em
 }
@@ -289,7 +290,7 @@ header .menu ul li a:hover {
   border-radius: 20px;
   border: none;
   color: #fff;
-  background-color: rgba(21, 111, 195, 0.5);
+  background-color: #00fa6d;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -334,7 +335,7 @@ header .menu ul li a:hover {
 #contact .container {
   width: 100%;
   height: 100vh;
-  background: url(image/CREATIVE_3.png);
+  background: url(image/CREATIVE_3\ teste2.png);
   background-size: cover;
 }
 
@@ -396,6 +397,34 @@ footer a {
   color: #2e8b57;
 }
 
+/*==== btn-mobile =====*/
+
+header .btn-mobile{
+  display: block;
+}
+header .menu-mobile{
+  display: none;
+  width: 50%;
+  height: 20vh;
+  box-shadow: 0 0 15px 0 #00fa6d;
+  position: fixed;
+  top: 20px;
+  border-radius: 10px;
+  background: #00fa6d;
+}
+header .menu-mobile ul{
+  text-align: center;
+}
+header .menu-mobile ul li{
+  list-style: none;
+  padding: 12px 0;
+}
+header .menu-mobile ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /*===Responsive===*/
 
 @media screen and (max-width: 1280px){
@@ -410,9 +439,13 @@ footer a {
       font-size: 0.8rem;
   }
 }
+
+
+
+
 @media screen and (max-width: 960px){
   body{
-      background: url(image/CREATIVE_3.png);
+      background: url(image/CREATIVE_3\ teste2.png);
   }
   header{
       background: none;
@@ -434,11 +467,11 @@ footer a {
       display: none;
       width: 50%;
       height: 20vh;
-      box-shadow: 0 0 15px 0 rgba(21,111,195,0.5);
+      box-shadow: 0 0 15px 0 #00fa6d;
       position: fixed;
       top: 20px;
       border-radius: 10px;
-      background: #156fc3;
+      background: #00fa6d;
   }
   header .menu-mobile ul{
       text-align: center;
@@ -520,6 +553,29 @@ footer a {
   }
   #home .container .title h3{
       letter-spacing: 10px;
+  }
+  #about .container .title{
+      padding: 10px 60px;
+  }
+  #about .container .title p{
+      width: 100%;
+      margin-top: 30px;
+  }
+  #port .container .card{
+      width: 60%;
+      height: 60%;
+  }
+}
+
+@media screen and (max-width: 390px){
+  header{
+      padding: 2px;
+  }
+  #home .container .title h2{
+    padding: 10px 60px;
+  }
+  #home .container .title h3{
+    padding: 10px 60px;
   }
   #about .container .title{
       padding: 10px 60px;
