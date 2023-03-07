@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -59,5 +60,74 @@ header .menu ul li a:hover {
 .container {
   width: 100%;
   height: 100vh;
-  background: black;
+  background:url(/body/image/background.png);
+  padding-top: 10vh;
+  display: flex;
+}
+
+.container .card {
+  width: 20%;
+  height: 40%;
+  left: 0;
+  right: 0;
+  margin: 130px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 #00fa6d;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(60%);
+}
+
+.container .card h1 {
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  font-size: 1.4rem;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.container .card p {
+  position: absolute;
+  z-index: 9;
+  width: 200px;
+  color: #fff;
+  margin-top: 150px;
+  text-align: justify;
+  text-shadow: black 0.1em 0.1em 0.1em
+}
+
+.container .card button {
+  position: absolute;
+  z-index: 9;
+  margin-top: 400px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background-color: #00fa6d;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container .card button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
