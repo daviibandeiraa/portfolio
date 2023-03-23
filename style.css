@@ -167,10 +167,10 @@ header .menu ul li a:hover {
 
 #about .container .box-title {
   width: 420px;
-  height: 37vh;
+  height: 45vh;
   margin-top: 20px;
   padding: 0 10px;
-  box-shadow: 0 0 10px 0 rgba(21, 111, 195, 0.5);
+  box-shadow: 0 0 10px 0 rgb(3, 255, 87);
   border-radius: 20px;
 }
 
@@ -240,8 +240,8 @@ header .menu ul li a:hover {
 
 #port .container .card {
   position: absolute;
-  width: 40%;
-  height: 80%;
+  width: 30%;
+  height: 70%;
   left: 0;
   right: 0;
   margin: 150px auto;
@@ -251,6 +251,7 @@ header .menu ul li a:hover {
   box-shadow: 0 0 10px 0 #00fa6d;
   transition: 0.4s ease;
   cursor: pointer;
+  border-radius: 2%;
 }
 
 
@@ -266,27 +267,27 @@ header .menu ul li a:hover {
   position: absolute;
   z-index: 9;
   color: #fff;
-  font-size: 3rem;
-  margin-top: 60px;
+  font-size: 2rem;
+  margin-top: 50px;
   text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #port .container .card p {
   position: absolute;
   z-index: 9;
-  width: 600px;
+  width: 60%;
   color: #fff;
   margin-top: 200px;
   text-align: justify;
   text-shadow: black 0.1em 0.1em 0.1em;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #port .container .card button {
   position: absolute;
   z-index: 9;
-  margin-top: 600px;
+  margin-top: 320px;
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
